@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:orientation="vertical">
+	
+	<include layout="@layout/action_bar"/>
+
+<TableLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:stretchColumns="1">
+	
+	<TableRow>
+		<TextView
+			android:layout_column="1"
+			android:text="Title:"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:shadowColor="#90909090"
+			android:shadowDx="1.0"
+			android:shadowDy="1.0"
+			android:shadowRadius="1.0"
+			android:padding="3dip"/>
+		<TextView android:id="@+id/details_title"
+			android:textSize="18sp"
+			android:shadowColor="#90909090"
+			android:shadowDx="1.0"
+			android:shadowDy="1.0"
+			android:shadowRadius="1.0"
+			android:padding="3dip"
+			android:gravity="right"/>
+	</TableRow>
+	
+	<View android:layout_height="2dip"
+        android:background="#90909090" />
+	
+	<TableRow>
+		<TextView 
+			android:layout_column="1"
+			android:text="Created:"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:shadowColor="#90909090"
+			android:shadowDx="1.0"
+			android:shadowDy="1.0"
+			android:shadowRadius="1.0"
+			android:padding="3dip"/>
+		<TextView 
+			android:id="@+id/date_created"
+			android:textSize="18sp"
+			android:shadowColor="#90909090"
+			android:shadowDx="1.0"
+			android:shadowDy="1.0"
+			android:shadowRadius="1.0"
+			android:padding="3dip"
+			android:gravity="right"/>
+	</TableRow>
+	
+	<TableRow>
+		<TextView 
+			android:layout_column="1"
+			android:text="Edited:"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:shadowColor="#90909090"
+			android:shadowDx="1.0"
+			android:shadowDy="1.0"
+			android:shadowRadius="1.0"
+			android:padding="3dip"/>
+		<TextView android:id="@+id/date_edited"
+			android:textSize="18sp"
+			android:shadowColor="#90909090"
+			android:shadowDx="1.0"
+			android:shadowDy="1.0"
+			android:shadowRadius="1.0"
+			android:padding="3dip"
+			android:gravity="right"/>
+	</TableRow>
+	
+	<View android:layout_height="2dip"
+        android:background="#90909090" />
+        
+    <TableRow>
+    	<TextView
+    		android:layout_column="1"
+    		android:text="@string/image_text"
+    		android:textSize="18sp"
+    		android:textStyle="bold"
+			android:shadowColor="#90909090"
+			android:shadowDx="1.0"
+			android:shadowDy="1.0"
+			android:shadowRadius="1.0"
+    		android:padding="3dip"/>
+    	<TextView
+    		android:id="@+id/image_attached"
+    		android:textSize="18sp"
+			android:shadowColor="#90909090"
+			android:shadowDx="1.0"
+			android:shadowDy="1.0"
+			android:shadowRadius="1.0"
+    		android:padding="3dip"
+    		android:gravity="right"/>
+    </TableRow>
+    
+    <TableRow>
+    	<TextView
+    		android:layout_column="1"
+    		android:text="@string/reminder_text"
+    		android:textSize="18sp"
+    		android:textStyle="bold"
+			android:shadowColor="#90909090"
+			android:shadowDx="1.0"
+			android:shadowDy="1.0"
+			android:shadowRadius="1.0"
+			android:padding="3dip"/>
+    	<TextView
+    		android:id="@+id/reminder_attached"
+    		android:textSize="18sp"
+			android:shadowColor="#90909090"
+			android:shadowDx="1.0"
+			android:shadowDy="1.0"
+			android:shadowRadius="1.0"
+    		android:padding="3dip"
+    		android:gravity="right"/>
+    </TableRow>
+        
+</TableLayout>
+</LinearLayout>

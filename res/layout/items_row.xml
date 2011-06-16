@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:background="@drawable/listbg">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_centerVertical="true">
+		
+		<TextView android:id="@+id/item_text"
+    		android:layout_width="200dp"
+    		android:layout_height="wrap_content"
+    		android:lines="1"
+    		android:scrollHorizontally="true"
+    		android:ellipsize="end"
+    		android:paddingLeft="5sp"
+   			android:textSize="18sp"
+    		android:shadowColor="#90909090"
+    		android:shadowDx="1.0"
+    		android:shadowDy="1.0"
+    		android:shadowRadius="1.0"/>
+    		
+    	<TextView android:id="@+id/item_date"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textSize="12sp"
+    		android:textColor="#FF808080"
+    		android:paddingLeft="5sp"
+    		android:paddingTop="5sp"/>
+    </LinearLayout>
+    
+    <ImageView android:id="@+id/item_deletion"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@drawable/deletion"
+    	android:visibility="invisible"
+    	android:layout_centerVertical="true"
+    	android:layout_alignParentRight="true"
+    	android:paddingRight="5sp"/>
+    	
+    <ImageView android:id="@+id/item_attachment"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@drawable/attachment"
+    	android:visibility="invisible"
+    	android:layout_centerVertical="true"
+    	android:layout_toLeftOf="@id/item_deletion"/>
+    	
+    <ImageView android:id="@+id/item_reminder"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:src="@drawable/alarm"
+    	android:visibility="invisible"
+    	android:layout_centerVertical="true"
+    	android:layout_toLeftOf="@id/item_attachment"/>
+
+</RelativeLayout>

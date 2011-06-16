@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.willtate.willdeux" android:versionName="1.16.12" android:versionCode="26">
+	<uses-sdk android:minSdkVersion="4"/>
+	<uses-permission android:name="android.permission.SET_ALARM" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<application android:icon="@drawable/icon" 
+    	android:label="@string/app_name" 
+    	android:theme="@android:style/Theme.Light.NoTitleBar" 
+    	android:allowClearUserData="true" 
+    	android:testOnly="false" android:debuggable="false">
+        <activity android:configChanges="keyboardHidden|orientation" 
+        	android:label="@string/app_name" android:name=".WillDeux">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    	<activity android:configChanges="keyboardHidden|orientation" android:name=".ItemEdit"/>
+		<activity android:name=".ItemDetails"/>
+		<activity android:name=".Settings"/>
+
+	<!-- WIDGET STUFF -->
+	
+		<receiver android:name=".WidgetProvider">
+    		<intent-filter>
+        		<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+    		</intent-filter>
+    		<meta-data android:name="android.appwidget.provider"
+               android:resource="@xml/appwidget_provider" />
+		</receiver>
+	
+	<!-- ALARM STUFF -->
+		<receiver android:name=".AlarmReceiver"></receiver>
+		<receiver android:name=".BootReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+
+	</application>
+
+</manifest> 

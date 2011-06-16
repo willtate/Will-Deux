@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Will Deux</string>
+    <string name="no_items">No Items</string>
+    <string name="menu_insert">Add Item</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_delete_sensor">Toggle Deletion</string>
+    <string name="menu_delete_nosensor">Delete</string>
+    <string name="menu_details">View Details</string>
+    <string name="menu_priority">Set Priority</string>
+    <string name="title">Enter Title</string>
+    <string name="body">Enter Body</string>
+    <string name="confirm">Done</string>
+    <string name="image">Image</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="view_item_image">View Item Image</string>
+    <string name="creation">Created:</string>
+    <string name="edit">Edited:</string>
+    <string name="attach_img">Image</string>
+    <string name="order">Order By</string>
+    <!-- Options for Ordering Items -->
+    <string name="create_ascending">Creation Date Ascending</string>
+    <string name="create_descending">Creation Date Descending</string>
+    <string name="title_ascending">Title Ascending</string>
+    <string name="title_descending">Title Descending</string>
+    <string name="edit_ascending">Edit Date Ascending</string>
+    <string name="edit_descending">Edit Date Descending</string>
+    <string name="priority_ascending">Priority Ascending</string>
+    <string name="priority_descending">Priority Descending</string>
+    <string name="details_title">Item Details</string>
+    <string name="image_text">Images:</string>
+    <string name="reminder_text">Reminder:</string>
+    <string name="reminder">Reminder</string>
+    <string name="image_options">Image Options</string>
+    
+    <string name="alarm_started">Alarm Started</string>
+    <string name="alarm_canceled">Alarm Canceled</string>
+    
+    <string name="notification_title">WillDeux</string>
+    <string name="notification_body">Item Reminder!</string>
+    
+    <string name="shake">Shake to delete items</string>
+    
+    <!-- Settings Stuff -->
+    <string name="settings_priority_color_high">High Priority Color</string>
+    <string name="settings_priority_color_norm">Normal Priority Color</string>
+    <string name="settings_priority_color_low">Low Priority Color</string>
+    
+    <!-- Image Viewer -->
+    <string name="image_zoom">Zoom</string>
+    <string name="image_remove">Remove</string>
+    <string name="image_move">Move</string>
+</resources>

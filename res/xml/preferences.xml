@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Priority Colors">
+		<Preference
+			android:title="High Color"
+			android:summary="Color to designated high priority items"
+			android:key="highColor"/>
+		<Preference
+			android:title="Normal Color"
+			android:summary="Color to designated normal priority items"
+			android:key="normColor"/>
+		<Preference
+			android:title="Low Color"
+			android:summary="Color to designated low priority items"
+			android:key="lowColor"/>
+		<Preference
+			android:title="Default Colors"
+			android:summary="Load default priority colors"
+			android:key="defaultColors"/>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Reminder Notification">
+		<CheckBoxPreference
+			android:title="Sound"
+			android:summary="Enable/disable use of default notification sound"
+			android:key="reminderSound"
+			android:defaultValue="true"/>
+		<CheckBoxPreference
+			android:title="Vibrate"
+			android:summary="Enable/disable use of vibrate"
+			android:key="reminderVibrate"
+			android:defaultValue="true"/>
+		<CheckBoxPreference
+			android:title="LED"
+			android:summary="Enable/disable use of LED"
+			android:key="reminderLED"
+			android:defaultValue="true"/>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Shake to Delete">
+		<CheckBoxPreference
+			android:title="Shake to Delete"
+			android:summary="Enable/disable shake to delete support"
+			android:key="sensorOption"
+			android:defaultValue="true"/>
+	</PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:orientation="vertical"
+	android:background="#FFFFFFFF">
+	
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="40dip"
+		android:background="@drawable/action_bar">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/app_name"
+			android:textColor="#FFFFFF"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:shadowColor="#B0B0B0B0"
+			android:shadowDx="2.0"
+			android:shadowDy="2.0"
+			android:shadowRadius="2.0"
+			android:layout_centerVertical="true"
+			android:paddingLeft="10dip"/>
+						
+		<ImageView
+			android:drawable="@drawable/action_bar_add"
+			android:id="@+id/action_bar_add"
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:paddingRight="5dip"
+			android:paddingLeft="5dip"
+			android:src="@drawable/action_bar_add_anim"/>
+			
+		<View
+			android:layout_height="fill_parent"
+			android:layout_width="2px"
+			android:layout_toLeftOf="@id/action_bar_add"
+			android:background="#90909090"/>
+			
+</RelativeLayout>
+
+<LinearLayout
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    
+    <ListView android:id="@id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:divider="#00FFFFFF"/>
+          
+    <TextView android:id="@+id/android:empty"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/no_items"
+ 		android:textSize="20sp"
+ 		android:textStyle="bold"
+		android:shadowColor="#90909090"
+    	android:shadowDx="1.0"
+    	android:shadowDy="1.0"
+    	android:shadowRadius="1.0"/>
+  
+</LinearLayout>
+</LinearLayout>

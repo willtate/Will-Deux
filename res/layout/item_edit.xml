@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:orientation="vertical">
+	
+	<include layout="@layout/action_bar"/>
+
+<LinearLayout
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		
+		<RelativeLayout android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:text="Title:"
+				android:textSize="14sp" 
+				android:textStyle="bold"
+				android:shadowColor="#90909090"
+    			android:shadowDx="1.0"
+    			android:shadowDy="1.0"
+    			android:shadowRadius="1.0"
+    			android:layout_gravity="left"/>
+    			
+    		<ImageView android:id="@+id/reminder"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/alarm"
+    			android:layout_toLeftOf="@+id/item_reminder"/>
+		
+			<TextView android:id="@+id/item_reminder"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:textStyle="bold"
+				android:shadowColor="#90909090"
+    			android:shadowDx="1.0"
+    			android:shadowDy="1.0"
+    			android:shadowRadius="1.0"
+    			android:layout_alignParentRight="true"/>
+		</RelativeLayout>
+		
+		<EditText android:id="@+id/title" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:layout_weight="1"
+			android:hint="@string/title"
+			android:textColorHint="#90909090"/>
+			
+	</LinearLayout>
+	
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="Body:"
+		android:textSize="14sp"
+		android:textStyle="bold"
+		android:shadowColor="#90909090"
+    	android:shadowDx="1.0"
+    	android:shadowDy="1.0"
+    	android:shadowRadius="1.0"/>
+		
+	<EditText android:id="@+id/body" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:gravity="top"
+		android:scrollbars="vertical"
+		android:hint="@string/body"
+		android:textColorHint="#90909090"/>
+		
+	<LinearLayout android:id="@+id/bottom_buttons"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		
+		<Button android:id="@+id/confirm" 
+	  		android:text="@string/confirm"
+			android:layout_width="wrap_content"
+			android:layout_height="72dip" 
+			android:textSize="14sp"
+			android:textStyle="bold"
+			android:shadowColor="#90909090"
+    		android:shadowDx="1.0"
+    		android:shadowDy="1.0"
+    		android:shadowRadius="1.0"/>
+		
+		<Gallery android:id="@+id/gallery" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"/>
+	
+	</LinearLayout>
+	
+</LinearLayout>
+</LinearLayout>
