@@ -41,6 +41,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnFocusChangeListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
@@ -104,6 +105,7 @@ public class ItemEdit extends Activity {
     /* Used for date picker */
     private DatePickerDialog.OnDateSetListener mDateSetListener =
     	new DatePickerDialog.OnDateSetListener() {
+    		@Override
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                 mYear = year;
                 mMonth = monthOfYear;
@@ -114,6 +116,7 @@ public class ItemEdit extends Activity {
     /* Used for time picker */
     private TimePickerDialog.OnTimeSetListener mTimeSetListener =
         new TimePickerDialog.OnTimeSetListener() {
+    		@Override
             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
                 mHour = hourOfDay;
                 mMinute = minute;
@@ -190,6 +193,13 @@ public class ItemEdit extends Activity {
 				showDialog(GALLERY_DIALOG);
 				return false;
 			}
+	    });
+	    
+	    mBodyText.setOnFocusChangeListener(new OnFocusChangeListener() {
+	    	@Override
+	    	public void onFocusChange(View v, boolean hasFocus) {
+	    		;
+	    	}
 	    });
     }
     

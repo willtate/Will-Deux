@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
 
-    	<activity android:configChanges="keyboardHidden|orientation" android:name=".ItemEdit"/>
+    	<activity android:configChanges="keyboardHidden|orientation" android:name=".ItemEdit" android:windowSoftInputMode="adjustPan" />
 		<activity android:name=".ItemDetails"/>
 		<activity android:name=".Settings"/>
 
