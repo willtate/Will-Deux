@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.willtate.willdeux" android:versionName="1.16.12" android:versionCode="26">
+	package="com.willtate.willdeux" android:versionName="1.16.13" android:versionCode="27">
 	<uses-sdk android:minSdkVersion="4"/>
 	<uses-permission android:name="android.permission.SET_ALARM" />
 	<uses-permission android:name="android.permission.VIBRATE" />
